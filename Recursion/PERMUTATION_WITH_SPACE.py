@@ -1,5 +1,7 @@
 #when no space required befre 1st letter of string "ABC" => NO SPACE BEFORE A
 
+
+# helper function
 def pws(ip,op):
      res=[]
      if len(ip)==0:
@@ -13,7 +15,9 @@ def pws(ip,op):
      res+=pws(ip,op1)
      res+=pws(ip,op2)
      return res
-     
+
+
+# this is the function to be called in main   
 def solve(init_ip):
     ip=init_ip[1:] 
     op=init_ip[0]
